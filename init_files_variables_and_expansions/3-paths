@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $PATH | tr ':' '\n' | wc -1
+PATH_DIRS=$(find $(echo $PATH | tr ':' '\n') -type d | wc -l)
